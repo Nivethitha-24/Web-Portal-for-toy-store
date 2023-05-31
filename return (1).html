@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Online Shopping - Return Option</title>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    margin-top: 0;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+    </style>
+</head>
+<body>
+    <h1>Online Shopping - Return Option</h1>
+    <form id="returnForm">
+        <h2>Return Form</h2>
+        <label for="orderNumber">Order Number:</label>
+        <input type="text" id="orderNumber" name="orderNumber" required>
+        <label for="reason">Reason for Return:</label>
+        <textarea id="reason" name="reason" required></textarea>
+        <input type="submit" value="Submit">
+    </form>
+
+    <script>
+        document.getElementById('returnForm').addEventListener('submit', function(event) {
+    event.preventDefault(); // Prevent the form from submitting
+
+    // Get the form values
+    var orderNumber = document.getElementById('orderNumber').value;
+    var reason = document.getElementById('reason').value;
+
+    // Process the return request (e.g., send it to the server)
+    // You can use AJAX or fetch to send the data to the server
+    // Here's a simple example using the console to display the return details
+    console.log('Order Number:', orderNumber);
+    console.log('Reason for Return:', reason);
+
+    // Optionally, display a success message to the user
+    alert('Return request submitted successfully!');
+});
+
+    </script>
+</body>
+</html>

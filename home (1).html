@@ -1,0 +1,531 @@
+<html>
+<head>
+<style>
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'roboto', sans-serif;
+}
+
+.navbar{
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #f5f5f5;
+    z-index: 9;
+}
+.nav{
+    padding: 10px 10vw;
+    display: flex;
+    justify-content: space-between;
+}
+.brand-logo{
+    height: 60px;
+}
+.nav-items{
+    display: flex;
+    align-items: center;
+}
+.search{
+    width: 500px;
+    display: flex;
+}
+.search-box{
+    width: 80%;
+    height: 40px;
+    padding: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border: 1px solid #d1d1d1;
+    text-transform: capitalize;
+    background: none;
+    color: #a9a9a9;
+    outline: none;
+}
+.search-btn{
+    width: 20%;
+    height: 40px;
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background: #383838;
+    color: #fff;
+    text-transform: capitalize;
+    font-size: 15px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.search-box::placeholder{
+    color: #a9a9a9;
+}
+.nav-items a{
+    margin-left: 20px;
+}
+.nav-items a img{
+    width: 30px;
+}
+.links-container{
+    width: 100%;
+    display: flex;
+    padding: 10px 10vw;
+    justify-content: center;
+    list-style: none;
+    border-top: 1px solid #d1d1d1;
+}
+.link{
+    text-transform: capitalize;
+    padding: 0 10px;
+    margin: 0 5px;
+    text-decoration: none;
+    color: #383838;
+    opacity: 0.5;
+    transition: .5s;
+}
+.link:hover{
+    opacity: 1;
+}
+.hero-section{
+    width: 100%;
+    height: calc(100vh - 120px);
+    background-image: url('../img/header.png');
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hero-section .logo{
+    height: 150px;
+    display: block;
+    margin: auto;
+}
+.hero-section .sub-heading{
+    margin-top: 10px;
+    text-align: center;
+    color: #fff;
+    text-transform: capitalize;
+    font-size: 35px;
+    font-weight: 300;
+}
+.product{
+    position: relative;
+    overflow: hidden;
+    padding: 20px 0;
+}
+.product-category{
+    padding: 0 10vw;
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 40px;
+    text-transform: capitalize;
+}
+body {
+  position: relative;
+}
+.section {
+  height: 100vh;
+  background: #dedede;
+  margin-bottom: 20px;
+  font-size: 100px;
+}
+
+.scroll-container {
+  position: absolute;
+  top: 0;
+  right:0;
+  height: 100%;
+}
+.scroll-container:before {
+  content: '';
+  display: block;
+  height: 100vh;
+  pointer-events: none;
+}
+.scroll-container a {
+  position: sticky;
+  top: 88vh;
+  cursor: pointer;
+  font-size: 20px;
+}  
+</style>
+<nav class="navbar">
+<div class="nav">
+  <p style="font-size:400%">𝓣𝓸𝔂𝓼</p>
+    <div class="nav-items">
+      <p><a href="review.html">For Reviews</a></p>
+       <p><a href="chat.html">Chat with us!!</p></a>
+        <a href="login (1).html"><img src="https://tse1.mm.bing.net/th?id=OIP.iPT2f-NkI6nwmeMnV_YazAHaHa&pid=Api&P=0" alt=""></a>
+        <a href="spin.html"><img src="http://cdn.onlinewebfonts.com/svg/img_555493.png" alt=""></a>
+        <a href="payment.html"><img src="https://icons-for-free.com/iconfiles/png/512/online+pay+payment+shopping+icon+icon-1320086640947325762.png"></a>
+</div>
+</nav>
+<div class="bgimg">
+  <div class="middle">
+  </div>
+   
+</div>
+</body>
+</html>
+<html>
+<head>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+}
+.wrapper {
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(180deg, #04fafd, 5%, #119dff, 50%, #030423);
+  position: absolute;
+}
+.wrapper h1 {
+ color:red;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  font-family: sans-serif;
+  letter-spacing: 1px;
+  word-spacing: 2px;
+  font-size: 90px;
+  text-shadow: 1px 1px 2px black, 0 0 25px white, 0 0 5px white;
+  font-weight: 888;
+  text-transform: uppercase;
+}
+.wrapper div {
+  height: 60px;
+  width: 60px;
+  border: 2px solid rgba(255, 255, 255, 0.7);
+  border-radius: 50px;
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  animation: 4s linear infinite;
+}
+div .dot {
+  height: 10px;
+  width: 10px;
+  border-radius: 50px;
+  background: rgba(255, 255, 255, 0.5);
+  position: absolute;
+  top: 20%;
+  right: 20%;
+}
+.wrapper div:nth-child(1) {
+  top: 20%;
+  left: 20%;
+  animation: animate 8s linear infinite;
+}
+.wrapper div:nth-child(2) {
+  top: 60%;
+  left: 80%;
+  animation: animate 10s linear infinite;
+}
+.wrapper div:nth-child(3) {
+  top: 40%;
+  left: 40%;
+  animation: animate 3s linear infinite;
+}
+.wrapper div:nth-child(4) {
+  top: 66%;
+  left: 30%;
+  animation: animate 7s linear infinite;
+}
+.wrapper div:nth-child(5) {
+  top: 90%;
+  left: 10%;
+  animation: animate 9s linear infinite;
+}
+.wrapper div:nth-child(6) {
+  top: 30%;
+  left: 60%;
+  animation: animate 5s linear infinite;
+}
+.wrapper div:nth-child(7) {
+  top: 70%;
+  left: 20%;
+  animation: animate 8s linear infinite;
+}
+.wrapper div:nth-child(8) {
+  top: 75%;
+  left: 60%;
+  animation: animate 10s linear infinite;
+}
+.wrapper div:nth-child(9) {
+  top: 50%;
+  left: 50%;
+  animation: animate 6s linear infinite;
+}
+.wrapper div:nth-child(10) {
+  top: 45%;
+  left: 20%;
+  animation: animate 10s linear infinite;
+}
+.wrapper div:nth-child(11) {
+  top: 10%;
+  left: 90%;
+  animation: animate 9s linear infinite;
+}
+.wrapper div:nth-child(12) {
+  top: 20%;
+  left: 70%;
+  animation: animate 7s linear infinite;
+}
+.wrapper div:nth-child(13) {
+  top: 20%;
+  left: 20%;
+  animation: animate 8s linear infinite;
+}
+.wrapper div:nth-child(14) {
+  top: 60%;
+  left: 5%;
+  animation: animate 6s linear infinite;
+}
+.wrapper div:nth-child(15) {
+  top: 90%;
+  left: 80%;
+  animation: animate 9s linear infinite;
+}
+@keyframes animate {
+  0% {
+    transform: scale(0) translateY(0) rotate(70deg);
+  }
+  100% {
+    transform: scale(1.3) translateY(-100px) rotate(360deg);
+  }
+}
+a{
+  text-align: center;
+  font-size:30px;
+  color:red;
+}
+  </style>
+  <div class="wrapper">
+    <div><span class="dot"></span></div>
+    <div><span class="dot"></span></div>
+    <div><span class="dot"></span></div>
+    <div><span class="dot"></span></div>
+    <div><span class="dot"></span></div>
+    <div><span class="dot"></span></div>
+    <div><span class="dot"></span></div>
+    <div><span class="dot"></span></div>
+    <div><span class="dot"></span></div>
+    <div><span class="dot"></span></div>
+    <div><span class="dot"></span></div>
+    <div><span class="dot"></span></div>
+    <div><span class="dot"></span></div>
+    <div><span class="dot"></span></div>
+    <div><span class="dot"></span></div>
+  </div>
+</body>
+</html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.mySlides {display:none;}
+.product-container{
+    padding: 16px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    height: auto;
+    grid-row-gap: 40px;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-card-back {
+  background-color: #2980b9;
+  color: white;
+  transform: rotateY(180deg);
+}
+</style>
+</head>
+<body>
+<br/>
+<div class="w3-content w3-display-container">
+   <img class="mySlides" src="https://cdn.fcglcdn.com/brainbees/banners/roi_hp_0520231684693197804.webp" style="width:100%;height:75%">
+  <img class="mySlides" src="http://cdn.fcglcdn.com/brainbees/images/marketing/d/toys_fest/banner-fisherprice.jpg" style="width:100%;height:75%">
+  <img class="mySlides" src="https://sslimages.shoppersstop.com/sys-master/root/hcc/hdd/12071181090846/banner_01_2000x600_Toys_EN_2000W_20181219.jpg" style="width:100%;height:75%">
+  <img class="mySlides" src="https://www.toys4ushop.com/wp-content/uploads/2020/04/SALE-2.png" style="width:100%;height:75%">
+
+  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+</div><br/>
+<br/>
+<br/>
+<div class="product-container">
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="https://images.pexels.com/photos/3661193/pexels-photo-3661193.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Avatar" style="width:300px;height:300px;">
+    </div>
+    <div class="flip-card-back">
+      <a href="wooden.html"><h1>Wooden toys</h1> </a>
+      <p> Wooden toys are strong and last a long time  </p> 
+      <p>Wooden Toys promote creative play </p>
+    <p>Wooden Toys are eco-friendly </p>
+    </div>
+  </div>
+</div>
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="https://cdn.notonthehighstreet.com/system/product_images/images/001/140/650/original_organic-cotton-toddler-soft-toys.jpg" alt="Avatar" style="width:300px;height:300px;">
+    </div>
+    <div class="flip-card-back">
+      <a href="soft.html"><h1>Soft toys</h1> </a>
+      <p>Very attractive, and kids love to play with it</p> 
+      <p> Fiber skin-friendly material</p>
+      <p>Non-allergic very safe to buy for babies</p>
+    </div>
+  </div>
+</div>
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="https://i.ytimg.com/vi/EWGwTalAdY4/maxresdefault.jpg" alt="Avatar" style="width:300px;height:300px;">
+    </div>
+    <div class="flip-card-back">
+      <a href="play dough.html"><h1>Play dough</h1> </a>
+      <p>Play-Doh is a modeling compound for young children to make arts and crafts projects at home. </p> 
+      
+    </div>
+  </div>
+</div>
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="https://images.pexels.com/photos/163696/toy-car-toy-box-mini-163696.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Avatar" style="width:300px;height:300px;">
+    </div>
+    <div class="flip-card-back">
+      <a href="boy.html"><h1>BOYS TOYS</h1> </a>
+      <p> Toys often introduce or reinforce interest in, machinery and technology for boys  </p> 
+      <p>Boy's toys mostly include vehicles </p>
+    </div>
+  </div>
+</div>
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="https://images-cdn.ubuy.co.in/633ffe8b08ffde5cd200be16-baby-toys-rattles-teether-and-shakers-9.jpg" alt="Avatar" style="width:300px;height:300px;">
+    </div>
+    <div class="flip-card-back">
+      <a href="new born.html"><h1>NEW BORN BABY TOYS</h1> </a>
+      <p> Your favorite childhood toy might have been a dollhouse, a stuffed animal, or a set of blocks. Some toys are specifically</p> 
+      <p>designed for play, like a small wooden train set or a baby's shape sorter. </p>
+    </div>
+  </div>
+</div>
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="https://sa.kapamilya.com/absnews/abscbnnews/media/2018/business/04/27/barbie-mattel.jpg" alt="Avatar" style="width:300px;height:300px;">
+    </div>
+    <div class="flip-card-back">
+      <a href="girl.html"><h1>GIRLS TOYS</h1> </a>
+    <p>Most of the girl's toys are pink themed </p> 
+    <p>girl's toys include teady bear&barbies </p>
+  </div>
+</div>
+</div>
+    
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="https://wallpapercave.com/wp/wp3748776.jpg" alt="Avatar" style="width:300px;height:300px;">
+    </div>
+    <div class="flip-card-back">
+      <a href="board.html"><h1>Board Games</h1> </a>
+      <p> Board games are tabletop games that typically use pieces .</p>
+      <p>These pieces are moved or placed </p>on a pre-marked board (playing surface) and
+      <p> often include elements of table, card, </p>
+      <p>role-playing, and miniatures games as well.</p>
+    </div>
+  </div>
+</div>
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="https://cache.lovethispic.com/uploaded_images/182399-Kids-Play-Dough.jpg" alt="Avatar" style="width:300px;height:300px;">
+    </div>
+
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="https://img.buzzfeed.com/buzzfeed-static/static/2018-05/22/15/asset/buzzfeed-prod-web-03/sub-buzz-15578-1527017723-1.jpg" alt="Avatar" style="width:300px;height:300px;">
+    </div>
+    <div class="flip-card-back">
+      <a href="new born.html"><h1>New born babie's</h1> </a>
+      <p> Board games are tabletop games that typically use pieces .</p>
+      <p>These pieces are moved or placed </p>on a pre-marked board (playing surface) and
+      <p> often include elements of table, card, </p>
+      <p>role-playing, and miniatures games as well.</p>
+    </div>
+  </div>
+</div>
+
+
+</div>
+</body>
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+</html>
+
